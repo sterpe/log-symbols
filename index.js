@@ -16,3 +16,5 @@ var win = {
 };
 
 module.exports = process.platform === 'win32' ? win : main;
+module.exports.alternate =
+	process.platform === 'win32' ? main : win;
