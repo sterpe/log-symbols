@@ -16,4 +16,4 @@ var win = {
 };
 
 module.exports = process.platform === 'win32' ? win : main;
-module.exports = process.env.CATHODE ? module.exports : win;
+module.exports = process.env.CATHODE ? win : module.exports;
